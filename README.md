@@ -17,10 +17,10 @@ Follow these steps to install and run the Bank Sampah project on your local mach
 
 Clone the repository to your local machine using Git.
 
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/bank-sampah.git
 cd bank-sampah
-\`\`\`
+```
 
 ### 2. Install Composer
 
@@ -30,54 +30,54 @@ If you haven't already installed Composer, you can download and install it using
 
 Run the following command to install the PHP dependencies:
 
-\`\`\`bash
+```bash
 composer install
-\`\`\`
+```
 
 ### 4. Install Node.js Dependencies and Compile Assets
 
 First, install the Node.js dependencies:
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 Then, compile the assets:
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ### 5. Set Up Environment Variables
 
 Copy the example environment file and make any necessary adjustments to your local environment:
 
-\`\`\`bash
+```bash
 cp .env.example .env
-\`\`\`
+```
 
 ### 6. Generate Application Key
 
 Generate a unique application key:
 
-\`\`\`bash
+```bash
 php artisan key:generate
-\`\`\`
+```
 
 ### 7. Configure Database
 
 Ensure that your database connection settings are correctly configured in the \`.env\` file. Then, run the migrations to create the necessary tables:
 
-\`\`\`bash
+```bash
 php artisan migrate
-\`\`\`
+```
 
 ### 8. Serve the Application
 
 Finally, serve the application locally:
 
-\`\`\`bash
+```bash
 php artisan serve
-\`\`\`
+```
 
 The application should now be accessible at \`http://127.0.0.1:8000\`.
